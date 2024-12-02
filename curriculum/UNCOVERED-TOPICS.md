@@ -1,0 +1,78 @@
+# Uncovered Topics in Bitcoin Core
+
+- Script interpreter and script validation system
+- Mining and block template creation
+- Fee estimation algorithms
+- Memory pool eviction policies
+- Bloom filter implementation
+- Compact block relay
+- Chain state pruning
+- Headers-first synchronization
+- Peer scoring and ban system
+- DNS seed functionality
+- Addrman implementation
+- ZMQ notification system
+- Descriptor wallet features
+- HD wallet key derivation
+- Chain reorganization handling
+- Block validation parallelization
+- Network message serialization
+- Tor integration
+- I2P integration
+- BIP implementations (various)
+- Signature cache
+- Transaction package validation
+- UTXO snapshot creation
+- Assumeutxo functionality
+- Taproot validation
+- Schnorr signature verification
+- Child Pays For Parent (CPFP) logic
+- Replace By Fee (RBF) policies
+- Compact block filters (BIP157/158)
+- P2P protocol extensions
+- Asmap peer IP grouping
+- Transaction index maintenance
+- Block filter index
+- Coinstats index
+- Transaction package mempool acceptance
+- Network bandwidth management
+- Chain tip management
+- Block download scheduling
+- Peer connection management
+- Transaction relay policies
+- Orphan transaction handling
+- Chain verification optimization
+- Block storage optimization
+- Database corruption recovery
+- Wallet database encryption
+- Chain state database design
+- Network address management
+- Transaction weight calculation
+- Signature operation counting
+- Script execution limits
+- Chain work calculation
+- Difficulty adjustment algorithm
+- Time warp attack prevention
+- Chain split detection
+- Network protocol versioning
+- Peer handshake protocol
+- Block header validation
+- Transaction malleability protection
+- Memory usage optimization
+- Database cache management
+- Network message handling queues
+- Peer discovery mechanisms
+- Transaction broadcasting strategies
+- Block propagation optimization
+- Chain state verification
+- Wallet transaction history
+- Address indexing
+- Chain analysis tools
+- Network health monitoring
+- Peer connection diversity
+- Transaction fee mechanisms
+- Block size limitations
+- Witness data handling
+- Script execution engine
+- Network DOS protection
+- Chain state bootstrapping 
