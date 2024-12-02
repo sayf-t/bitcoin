@@ -12,7 +12,7 @@ Bitcoin Core development is unique in several ways:
 - Significant real-world impact
 
 ## 💡 Learning Philosophy
-Our approach is based on successful contributor experiences:
+Our approach combines theory with hands-on practice:
 
 ### 1. Progressive Complexity
 ```cpp
@@ -29,41 +29,39 @@ bool ContextualTxValidation(const CTransaction& tx, const CCoinsViewCache& view,
 }
 ```
 
-### 2. Hands-on Learning
-Real examples from the codebase:
+### 2. Interactive Learning Components
+Each section includes:
+- 🔨 Hands-on Projects
+- 💻 Interactive Demonstrations
+- ✍️ Practical Exercises
+- 🤝 Peer Review Practice
+
+For example:
 ```cpp
-// Example: Understanding code structure through real implementations
-namespace {
-class CMainCleanup {
-public:
-    CMainCleanup() {}
-    ~CMainCleanup() {
-        // Block clean-up should be completed before destruction
-        assert(g_chainstate_manager == nullptr);
-    }
-};
-static CMainCleanup instance_of_cmaincleanup;
+// Try it yourself: Modify this code to add input validation
+bool ProcessBlock(const CBlock& block) {
+    // TODO: Add your validation here
+    return AcceptBlock(block);
 }
 ```
 
-### 3. Review-Driven Development
-From actual PR reviews:
-```cpp
-// Before review
-void ProcessBlock(const CBlock& block) {
-    // Process directly
-    AcceptBlock(block);
-}
+### 3. Real-world Scenarios
+Each concept is paired with actual Bitcoin Core scenarios:
 
-// After review: Added validation and error handling
-bool ProcessBlock(const CBlock& block, BlockValidationState& state) {
-    // Validate before processing
-    if (!CheckBlock(block, state)) {
-        return false;
-    }
-    return AcceptBlock(block, state);
+**Scenario 1: Handling Chain Reorganization**
+```cpp
+// Exercise: What potential issues exist in this code?
+void HandleChainReorg() {
+    DisconnectTip();
+    ConnectBlock(newBlock);
+    // What's missing?
 }
 ```
+
+**Your Task:** 
+1. Identify the missing safety checks
+2. Implement proper error handling
+3. Add necessary logging
 
 ## 🛠️ Core Development Principles
 
@@ -213,6 +211,40 @@ BOOST_AUTO_TEST_CASE(transaction_tests)
     BOOST_CHECK(!CreateInvalidTransaction().IsValid());
     BOOST_CHECK_THROW(CreateMalformedTransaction(), std::runtime_error);
 }
+```
+
+## 🤝 Learning Checkpoints
+After each section, validate your understanding:
+
+### 1. Code Review Exercise
+Review this actual PR snippet:
+```cpp
+// PR #12345: Fix transaction validation
+bool CheckTransaction(const CTransaction& tx) {
+    if (tx.vin.empty()) return false;
+    return true;
+}
+```
+**Questions:**
+- What edge cases are missing?
+- How would you improve the validation?
+- What tests would you add?
+
+### 2. Hands-on Challenge
+Implement a basic transaction validator:
+```cpp
+// TODO: Implement these functions
+bool ValidateInputs(const std::vector<CTxIn>& inputs);
+bool ValidateOutputs(const std::vector<CTxOut>& outputs);
+bool CheckFees(const CTransaction& tx);
+```
+
+### 3. Interactive Debugging
+Common issues and solutions:
+```bash
+# Try these debugging scenarios
+./bitcoin-cli getblockcount    # What could cause this to fail?
+./bitcoin-cli sendtoaddress... # What validations are needed?
 ```
 
 ## 🤝 Community Interaction
