@@ -12,211 +12,110 @@ This curriculum is designed to help you understand Bitcoin Core's architecture a
 
 ## 🗺️ Module Structure
 
-### Module 0: Introduction
-- ✅ `01-development-environment.md`: Development environment setup
-  - [View Demonstrations](00-introduction/demonstrations.md#development-environment-setup)
-  - Project: Environment Setup
-  - Interactive Demo: Build System
-  - Exercise: Configuration Validation
-- ✅ `02-code-navigation.md`: Codebase navigation
-  - [View Demonstrations](00-introduction/demonstrations.md#code-navigation)
-  - Project: Code Explorer
-  - Interactive Demo: Source Navigation
-  - Exercise: Feature Location
-- ✅ `03-contribution-workflow.md`: Contribution process
-  - [View Demonstrations](00-introduction/demonstrations.md#version-control)
-  - Project: PR Workflow
-  - Interactive Demo: Code Review
-  - Exercise: Patch Submission
-- ✅ `04-testing-introduction.md`: Testing philosophy
-  - [View Demonstrations](00-introduction/demonstrations.md#testing-framework)
-  - Project: Test Runner Setup
-  - Interactive Demo: Test Categories
-  - Exercise: Test Analysis
+### Module 0: Prerequisites
+- C++ Programming Fundamentals
+- Python Programming Fundamentals
+- Design Patterns and Best Practices
+- Development Tools Mastery
+- Cryptography Basics
+- Networking Fundamentals
 
-### Module 1: Fundamentals
-- ✅ `01-network-architecture.md`: P2P network architecture
-  - [View Demonstrations](01-fundamentals/demonstrations.md#network-architecture)
-  - Project: Network Simulator
-  - Interactive Demo: Peer Connections
-  - Exercise: Message Handling
-- ✅ `02-block-structure.md`: Block and transaction structure
-  - [View Demonstrations](01-fundamentals/demonstrations.md#block-structure)
-  - Project: Block Parser
-  - Interactive Demo: Chain Analysis
-  - Exercise: Block Creation
-- ✅ `03-transaction-handling.md`: Transaction processing
-  - [View Demonstrations](01-fundamentals/demonstrations.md#transaction-handling)
-  - Project: Transaction Builder
-  - Interactive Demo: UTXO Management
-  - Exercise: Script Validation
-- ✅ `04-mempool-management.md`: Memory pool handling
-  - [View Demonstrations](01-fundamentals/demonstrations.md#mempool-management)
-  - Project: Mempool Monitor
-  - Interactive Demo: Transaction Priority
-  - Exercise: Fee Estimation
+### Module 1: Setting Up Your Development Environment
+- Development environment setup and configuration
+- Build system and dependencies
+- Debugging tools and setup
+- Configuration management
+- Development workflow setup
 
-### Module 2: Consensus
-- ✅ `01-consensus-rules.md`: Consensus rule implementation
-  - [View Demonstrations](02-consensus/demonstrations.md#consensus-rules)
-  - Project: Rule Validator
-  - Interactive Demo: Block Validation
-  - Exercise: Fork Handling
-- ✅ `02-validation-mechanisms.md`: Block and transaction validation
-  - [View Demonstrations](02-consensus/demonstrations.md#validation-mechanisms)
-  - Project: Validation Framework
-  - Interactive Demo: Chain Verification
-  - Exercise: Script Execution
-- ✅ `03-fork-handling.md`: Chain reorganization
-  - [View Demonstrations](02-consensus/demonstrations.md#fork-handling)
-  - Project: Fork Simulator
-  - Interactive Demo: Chain Selection
-  - Exercise: State Management
+### Module 2: Navigating the Bitcoin Core Codebase
+- Source code organization
+- Code navigation techniques
+- Feature location strategies
+- Documentation structure
+- Development tools and utilities
 
-### Module 3: Wallet
-- ✅ `01-wallet-architecture.md`: Wallet implementation
-  - [View Demonstrations](03-wallet/demonstrations.md#wallet-architecture)
-  - Project: Basic Wallet
-  - Interactive Demo: Key Management
-  - Exercise: Address Generation
-- ✅ `02-key-management.md`: Key handling and security
-  - [View Demonstrations](03-wallet/demonstrations.md#key-management)
-  - Project: Key Store
-  - Interactive Demo: HD Derivation
-  - Exercise: Backup/Recovery
-- ✅ `03-transaction-building.md`: Transaction creation
-  - [View Demonstrations](03-wallet/demonstrations.md#transaction-building)
-  - Project: Transaction Creator
-  - Interactive Demo: PSBT Handling
-  - Exercise: Fee Calculation
-- ✅ `04-utxo-management.md`: UTXO handling
-  - [View Demonstrations](03-wallet/demonstrations.md#utxo-management)
-  - Project: UTXO Set
-  - Interactive Demo: Coin Selection
-  - Exercise: Change Management
+### Module 3: Understanding Bitcoin Core's Contribution Workflow
+- Git workflow and best practices
+- Pull request lifecycle
+- Code review process
+- Documentation standards
+- Community interaction guidelines
 
-### Module 4: Network Layer
-- ✅ `01-p2p-architecture.md`: P2P network implementation
-  - [View Demonstrations](04-network/demonstrations.md#p2p-architecture)
-  - Project: Network Manager
-  - Interactive Demo: Peer Handling
-  - Exercise: Message Relay
-- ✅ `02-node-discovery.md`: Peer discovery
-  - [View Demonstrations](04-network/demonstrations.md#node-discovery)
-  - Project: DNS Seeder
-  - Interactive Demo: Address Manager
-  - Exercise: Connection Handling
-- ✅ `03-message-handling.md`: Protocol messages
-  - [View Demonstrations](04-network/demonstrations.md#message-handling)
-  - Project: Message Handler
-  - Interactive Demo: Protocol Flow
-  - Exercise: Custom Messages
-- ✅ `04-network-security.md`: Network security
-  - [View Demonstrations](04-network/demonstrations.md#network-security)
-  - Project: Security Monitor
-  - Interactive Demo: Attack Simulation
-  - Exercise: DoS Protection
+### Module 4: Testing in Bitcoin Core Development
+- Testing philosophy and framework
+- Unit testing practices
+- Functional testing
+- Integration testing
+- Performance testing and benchmarking
 
-### Module 5: Storage & Index
-- ✅ `01-blockchain-storage.md`: Chain data storage
-  - [View Demonstrations](05-storage/demonstrations.md#blockchain-storage)
-  - Project: Block Store
-  - Interactive Demo: Data Layout
-  - Exercise: Storage Optimization
-- ✅ `02-database-indexing.md`: Index management
-  - [View Demonstrations](05-storage/demonstrations.md#database-indexing)
-  - Project: Index Manager
-  - Interactive Demo: Index Updates
-  - Exercise: Query Optimization
-- ✅ `03-query-optimization.md`: Query performance
-  - [View Demonstrations](05-storage/demonstrations.md#query-optimization)
-  - Project: Query Optimizer
-  - Interactive Demo: Performance Analysis
-  - Exercise: Index Selection
-- ✅ `04-backup-recovery.md`: Data reliability
-  - [View Demonstrations](05-storage/demonstrations.md#backup-recovery)
-  - Project: Backup Manager
-  - Interactive Demo: Recovery Process
-  - Exercise: Corruption Handling
+### Module 5: Bitcoin Core's Network Architecture
+- P2P network implementation
+- Node discovery and connection management
+- Protocol messages and handling
+- Network security and DOS protection
+- Network health monitoring
 
-### Module 6: Mempool Management
-- ✅ `01-mempool-management.md`: Memory pool implementation
-  - Project: Mempool Manager
-  - Interactive Demo: Transaction Processing
-  - Exercise: Fee Estimation
-- ✅ `02-transaction-validation.md`: Transaction validation
-  - Project: Validation Framework
-  - Interactive Demo: Script Verification
-  - Exercise: Input/Output Validation
-- ✅ `03-transaction-relay.md`: Transaction propagation
-  - Project: Relay Manager
-  - Interactive Demo: Network Propagation
-  - Exercise: Bandwidth Optimization
+### Module 6: Blockchain and Transaction Fundamentals
+- Block and transaction structure
+- Script execution and validation
+- UTXO management
+- Chain state management
+- Data serialization
 
-### Module 7: RPC & API
-- ✅ `01-rpc-interface.md`: RPC implementation
-  - [View Demonstrations](07-rpc-api/demonstrations.md#rpc-interface)
-  - Project: RPC Server
-  - Interactive Demo: Method Handling
-  - Exercise: Custom Commands
-- ✅ `02-api-implementation.md`: API framework
-  - [View Demonstrations](07-rpc-api/demonstrations.md#api-implementation)
-  - Project: REST API
-  - Interactive Demo: Endpoint Testing
-  - Exercise: API Development
-- ✅ `03-authentication.md`: Security
-  - [View Demonstrations](07-rpc-api/demonstrations.md#authentication)
-  - Project: Auth System
-  - Interactive Demo: Security Testing
-  - Exercise: Access Control
-- ✅ `04-request-handling.md`: Request processing
-  - [View Demonstrations](07-rpc-api/demonstrations.md#request-handling)
-  - Project: Request Handler
-  - Interactive Demo: Request Flow
-  - Exercise: Validation Rules
+### Module 7: Mempool Management and Fee Estimation
+- Memory pool implementation
+- Transaction validation and relay
+- Fee estimation algorithms
+- Package acceptance
+- Replace-by-fee policies
 
-### Module 8: Testing
-- ✅ `01-unit-testing.md`: Unit testing
-  - [View Demonstrations](08-testing/demonstrations.md#unit-testing)
-  - Project: Test Framework Extension
-  - Interactive Demo: Test Runner
-  - Exercise: Custom Test Implementation
-- ✅ `02-functional-testing.md`: Functional testing
-  - [View Demonstrations](08-testing/demonstrations.md#functional-testing)
-  - Project: Test Suite Development
-  - Interactive Demo: Test Execution
-  - Exercise: Feature Testing
-- ✅ `03-integration-testing.md`: Integration testing
-  - [View Demonstrations](08-testing/demonstrations.md#integration-testing)
-  - Project: System Test Framework
-  - Interactive Demo: Network Testing
-  - Exercise: Component Integration
-- ✅ `04-performance-testing.md`: Performance testing
-  - [View Demonstrations](08-testing/demonstrations.md#performance-testing)
-  - Project: Benchmark Suite
-  - Interactive Demo: Performance Analysis
-  - Exercise: Optimization Testing
+### Module 8: Consensus Rules and Validation
+- Consensus rule implementation
+- Block validation mechanisms
+- Chain reorganization handling
+- Fork detection and handling
+- Difficulty adjustment
 
-### Module 9: Advanced Topics (Coming Soon)
-- 📅 `01-advanced-consensus.md`: Advanced consensus mechanisms
-- 📅 `02-scaling-solutions.md`: Scaling and optimization
-- 📅 `03-security-hardening.md`: Security best practices
-- 📅 `04-future-enhancements.md`: Future improvements
+### Module 9: Wallet Development and Key Management
+- Wallet architecture
+- Key management and security
+- Transaction building
+- HD wallet implementation
+- Descriptor wallet features
 
-## 📈 Current Focus
-Moving on to Module 9: Advanced Topics, specifically:
+### Module 10: RPC and API Development
+- RPC interface implementation
+- REST API framework
+- Authentication and security
+- Request handling and validation
+- ZMQ notification system
+
+### Module 11: Open Source Contribution Masterclass
+- Effective PR creation
+- Code review participation
+- Documentation writing
+- Community engagement
+- Contribution best practices
+
+### Module 12: Advanced Topics and Practical Projects
 - Advanced consensus mechanisms
 - Scaling solutions
 - Security hardening
+- Performance optimization
 - Future improvements
 
+## 📈 Learning Path
+1. Complete Module 0 to ensure you have the necessary prerequisites
+2. Start with Module 1 to set up your development environment
+3. Progress through Modules 2-4 to understand the codebase and contribution process
+4. Deep dive into technical modules 5-10 for core Bitcoin functionality
+5. Complete Modules 11-12 to become an effective contributor
+
 ## 🎯 Next Steps
-1. Create advanced consensus guide
-2. Implement scaling solutions
-3. Build security framework
+1. Assess your knowledge of prerequisites (Module 0)
+2. Set up your development environment (Module 1)
+3. Learn to navigate the codebase (Module 2)
+4. Make your first contribution (Module 3)
 
 ## 📚 Additional Resources
-- [Bitcoin Core Documentation](https://github.com/bitcoin/bitcoin/tree/master/doc)
-- [Developer Notes](https://github.com/bitcoin/bitcoin/blob/master/doc/developer-notes.md)
-- [Contribution Guidelines](https://github.com/bitcoin/bitcoin/blob/master/CONTRIBUTING.md)
-- [Style Guide](https://github.com/bitcoin/bitcoin/blob/master/doc/developer-notes.md#coding-style)
+See [USEFUL-REFERENCES.md](./USEFUL-REFERENCES.md) for a comprehensive list of learning resources.

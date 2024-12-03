@@ -1,78 +1,113 @@
-# Uncovered Topics in Bitcoin Core
+# Topics to Be Covered in Bitcoin Core Curriculum
 
-- Script interpreter and script validation system
-- Mining and block template creation
-- Fee estimation algorithms
-- Memory pool eviction policies
-- Bloom filter implementation
-- Compact block relay
-- Chain state pruning
-- Headers-first synchronization
+This document tracks topics that need to be incorporated into the curriculum modules. Each section corresponds to a module where the topics should be covered.
+
+## Module 0: Prerequisites
+- Advanced C++ features (templates, RAII, smart pointers)
+- Modern Python features (asyncio, type hints)
+- Additional design patterns (Command, Observer, Factory)
+- Advanced debugging techniques
+- Post-quantum cryptography considerations
+- Advanced networking protocols
+
+## Module 1: Development Environment
+- Build system optimization
+- Development environment troubleshooting
+- Cross-platform considerations
+
+## Module 2: Codebase Navigation
+- Source code organization patterns
+- Code search strategies
+- Documentation best practices
+
+## Module 3: Contribution Workflow
+- Code review best practices
+- Git workflow optimization
+- Documentation standards
+
+## Module 4: Testing
+- Test framework architecture
+- Performance testing methodology
+- Test coverage analysis
+
+## Module 5: Network Architecture
+- Tor integration
+- I2P integration
+- Network bandwidth management
 - Peer scoring and ban system
 - DNS seed functionality
 - Addrman implementation
-- ZMQ notification system
-- Descriptor wallet features
-- HD wallet key derivation
-- Chain reorganization handling
-- Block validation parallelization
-- Network message serialization
-- Tor integration
-- I2P integration
-- BIP implementations (various)
-- Signature cache
-- Transaction package validation
-- UTXO snapshot creation
-- Assumeutxo functionality
-- Taproot validation
-- Schnorr signature verification
-- Child Pays For Parent (CPFP) logic
-- Replace By Fee (RBF) policies
-- Compact block filters (BIP157/158)
-- P2P protocol extensions
-- Asmap peer IP grouping
-- Transaction index maintenance
-- Block filter index
-- Coinstats index
-- Transaction package mempool acceptance
-- Network bandwidth management
-- Chain tip management
-- Block download scheduling
 - Peer connection management
-- Transaction relay policies
-- Orphan transaction handling
-- Chain verification optimization
-- Block storage optimization
-- Database corruption recovery
-- Wallet database encryption
-- Chain state database design
-- Network address management
+- Network health monitoring
+- Network DOS protection
+- Peer connection diversity
+
+## Module 6: Blockchain and Transaction Fundamentals
+- Script interpreter and validation
 - Transaction weight calculation
 - Signature operation counting
 - Script execution limits
+- Transaction malleability protection
+- Taproot validation
+- Schnorr signature verification
+- Block header validation
 - Chain work calculation
+
+## Module 7: Mempool Management
+- Memory pool eviction policies
+- Fee estimation algorithms
+- Transaction package validation
+- Child Pays For Parent (CPFP) logic
+- Replace By Fee (RBF) policies
+- Transaction relay policies
+- Orphan transaction handling
+- Transaction package mempool acceptance
+
+## Module 8: Consensus Rules
 - Difficulty adjustment algorithm
 - Time warp attack prevention
 - Chain split detection
-- Network protocol versioning
-- Peer handshake protocol
-- Block header validation
-- Transaction malleability protection
-- Memory usage optimization
-- Database cache management
-- Network message handling queues
-- Peer discovery mechanisms
-- Transaction broadcasting strategies
-- Block propagation optimization
-- Chain state verification
+- Chain state pruning
+- Headers-first synchronization
+- Block validation parallelization
+- Chain reorganization handling
+- Assumeutxo functionality
+
+## Module 9: Wallet Development
+- HD wallet key derivation
+- Descriptor wallet features
+- Wallet database encryption
 - Wallet transaction history
 - Address indexing
+
+## Module 10: RPC and API
+- ZMQ notification system
+- Transaction index maintenance
+- Block filter index
+- Coinstats index
+- Compact block filters (BIP157/158)
+
+## Module 11: Open Source Contribution
+- Community engagement strategies
+- Documentation improvement
+- Code review techniques
+
+## Module 12: Advanced Topics
+- Mining and block template creation
+- Bloom filter implementation
+- Compact block relay
+- Chain state bootstrapping
+- Network protocol versioning
 - Chain analysis tools
-- Network health monitoring
-- Peer connection diversity
-- Transaction fee mechanisms
-- Block size limitations
-- Witness data handling
-- Script execution engine
-- Network DOS protection
-- Chain state bootstrapping 
+- Performance optimization strategies
+- Security hardening techniques
+
+## General Improvements Needed
+- More practical exercises
+- Real-world examples
+- Interactive demonstrations
+- Troubleshooting guides
+- Performance optimization guides
+- Security best practices
+
+This list will be updated as new topics are identified or existing topics are covered in the curriculum. 
